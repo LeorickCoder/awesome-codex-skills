@@ -2,13 +2,13 @@
 
 A public repository of reusable Codex skills, focused on design systems, UI direction, frontend styling, brand work, and presentation workflows.
 
-This is not a generic prompt collection. Each skill in this repo is meant to be a practical working unit: a `SKILL.md` with clear triggers, handoff rules, and optional helper assets such as scripts, references, templates, agents, or data files.
+This is a Codex-first skill repository. Each skill in this repo is designed as a practical working unit for Codex: a `SKILL.md` with clear triggers, operating guidance, handoff rules, and optional helper assets such as scripts, references, templates, agents, or data files.
 
 ## What This Repository Is
 
 This repository is the shared home for a growing set of Codex-oriented skills that can be:
 
-- used directly in day-to-day work
+- used directly in Codex sessions
 - versioned and improved in public
 - combined across related workflows
 - reviewed with the same discipline as code and documentation
@@ -23,21 +23,21 @@ The current collection leans heavily toward design and frontend execution:
 
 ## Skill Map
 
-| Skill | Focus | When to use |
+| Skill | Focus | When to use in Codex |
 | --- | --- | --- |
-| [banner-design](./banner-design/) | Banner art direction and safe-zone guidance | Social headers, ads, website heroes, and print banners |
-| [brand](./brand/) | Brand voice, visual identity, and asset governance | Brand systems, palette rules, messaging, and brand audits |
-| [design](./design/) | Top-level design routing | Multi-domain design requests that need the right skill path |
-| [design-system](./design-system/) | Design tokens and component specifications | Turning an approved visual direction into reusable systems |
-| [slides](./slides/) | Slide narrative and presentation structure | Deck planning, slide flow, and presentation storytelling |
-| [ui-styling](./ui-styling/) | UI implementation patterns | shadcn/ui, Tailwind CSS, responsive layout, and theming |
-| [ui-ux-pro-max](./ui-ux-pro-max/) | UI/UX decision support | Choosing style, typography, color, layout, and UX direction before implementation |
+| [banner-design](./banner-design/) | Banner art direction and safe-zone guidance | When Codex needs to propose or refine social headers, ad banners, website heroes, or print banner layouts |
+| [brand](./brand/) | Brand voice, visual identity, and asset governance | When Codex needs to define, audit, or operationalize brand rules before design or implementation work |
+| [design](./design/) | Top-level design routing | When Codex needs to route a broad design request across brand, design-system, UI styling, slides, or visual asset workflows |
+| [design-system](./design-system/) | Design tokens and component specifications | When Codex needs to turn an approved visual direction into tokens, component rules, or systemized slide logic |
+| [slides](./slides/) | Slide narrative and presentation structure | When Codex needs to plan deck structure, slide-by-slide flow, presentation copy, or HTML slide output |
+| [ui-styling](./ui-styling/) | UI implementation patterns | When Codex needs to implement approved UI direction with shadcn/ui, Tailwind CSS, theming, and responsive layout |
+| [ui-ux-pro-max](./ui-ux-pro-max/) | UI/UX decision support | When Codex needs to choose or justify layout, typography, palette, charts, or UX direction before implementation |
 
 ## How to Use This Repo
 
-1. Pick the skill folder that matches the task.
+1. Pick the skill folder that matches the task you want Codex to handle.
 2. Start with the local `SKILL.md`.
-3. Use the bundled scripts or references only when that skill tells you to.
+3. Use the bundled scripts or references only when that skill tells Codex to use them.
 4. Follow handoff guidance when the skill points to a companion skill.
 
 If you are unsure where to start:
@@ -67,7 +67,7 @@ If you are unsure where to start:
 `-- ui-ux-pro-max/
 ```
 
-Each skill folder keeps its source of truth in `SKILL.md`. Supporting materials may live next to it in folders such as `references/`, `scripts/`, `assets/`, `agents/`, or `data/`.
+Each skill folder keeps its source of truth in `SKILL.md`. Supporting materials may live next to it in folders such as `references/`, `scripts/`, `assets/`, `agents/`, or `data/`. The goal is to make each skill directly usable by Codex without scattering workflow context across the repo.
 
 ## Repository Rules
 
@@ -84,8 +84,8 @@ That keeps the collection readable as it grows and makes it easier to review eac
 
 Contributions are welcome for:
 
-- new skills with a real workflow behind them
-- improvements to existing skills
+- new Codex skills with a real workflow behind them
+- improvements to existing Codex skills
 - validation and tooling for repository quality
 - documentation that makes the repo easier to adopt and maintain
 
@@ -113,10 +113,6 @@ python scripts/validate_repo.py
 - Add more Codex skills across engineering, research, automation, and document workflows
 - Improve repository validation to catch broken relative references inside skills
 - Add automated skill indexing or searchable metadata exports
-
-## Acknowledgement
-
-The idea of organizing reusable agent skills in a public repository was informed by projects such as [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills), but this repository is structured around Codex workflows and the specific skill set maintained here.
 
 ## License
 
