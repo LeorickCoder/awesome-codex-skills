@@ -1,0 +1,36 @@
+name: Skill proposal
+description: Suggest a new Codex skill or a major enhancement to an existing one
+title: "[Skill] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals work best when they are tied to a real workflow, team need, or repeated prompt pattern.
+  - type: input
+    id: problem-space
+    attributes:
+      label: Workflow or problem space
+      placeholder: Example: release notes, API docs review, SQL debugging
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Real-world use case
+      description: Who needs this and what repeated task should the skill improve?
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Proposed skill outline
+      description: Describe the expected triggers, outputs, or helper files.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or inspirations
+      description: Related repos, documents, workflows, or examples

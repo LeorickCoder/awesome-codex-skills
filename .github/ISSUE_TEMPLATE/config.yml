@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution guide
+    url: https://github.com/LeorickCoder/awesome-codex-skills/blob/main/CONTRIBUTING.md
+    about: Review the contribution rules before opening a pull request.

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Slides"
+  short_description: "Plan deck structure and slide-by-slide content."
+  default_prompt: "Use $slides to plan or refine the slide deck structure and slide-by-slide content for this topic."
+
+policy:
+  allow_implicit_invocation: true

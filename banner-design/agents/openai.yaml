@@ -1,0 +1,7 @@
+interface:
+  display_name: "Banner Design"
+  short_description: "Banner-specific sizes, layout, and art direction."
+  default_prompt: "Use $banner-design to map this campaign brief to banner sizes, safe zones, art direction, and layout guidance."
+
+policy:
+  allow_implicit_invocation: true

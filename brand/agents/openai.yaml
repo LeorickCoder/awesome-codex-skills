@@ -1,0 +1,7 @@
+interface:
+  display_name: "Brand"
+  short_description: "Brand rules, voice, and token sync."
+  default_prompt: "Use $brand to extract or update the brand rules for this project before we style the interface."
+
+policy:
+  allow_implicit_invocation: true

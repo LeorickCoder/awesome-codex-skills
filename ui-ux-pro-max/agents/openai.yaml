@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI UX Pro Max"
+  short_description: "Choose UI direction before tokens or code."
+  default_prompt: "Use $ui-ux-pro-max to choose and justify the interface direction before we formalize tokens or implementation."
+
+policy:
+  allow_implicit_invocation: true

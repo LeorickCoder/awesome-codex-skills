@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design System"
+  short_description: "Formalize direction into tokens and specs."
+  default_prompt: "Use $design-system to turn the approved visual direction into tokens, component rules, and slide-system structure."
+
+policy:
+  allow_implicit_invocation: true

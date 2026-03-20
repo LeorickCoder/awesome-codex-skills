@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a broken script, incorrect skill behavior, or repository issue
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please share enough detail for us to reproduce and fix it.
+  - type: input
+    id: location
+    attributes:
+      label: Affected file or skill
+      description: Example: `ui-styling/SKILL.md` or `scripts/validate_repo.py`
+      placeholder: path/to/file
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened
+      description: Describe the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Share the exact steps, prompts, or commands that reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Logs, screenshots, environment notes, or related links

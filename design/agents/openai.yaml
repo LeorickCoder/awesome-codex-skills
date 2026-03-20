@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design"
+  short_description: "Route broad requests across design skills."
+  default_prompt: "Use $design to route this multi-domain design request to the right specialized skills and local deliverable workflows."
+
+policy:
+  allow_implicit_invocation: true

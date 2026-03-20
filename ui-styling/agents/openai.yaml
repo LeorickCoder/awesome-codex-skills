@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Styling"
+  short_description: "Implement approved UI with shadcn and Tailwind."
+  default_prompt: "Use $ui-styling to implement this already-approved interface with shadcn, Tailwind, and accessible component patterns."
+
+policy:
+  allow_implicit_invocation: true
