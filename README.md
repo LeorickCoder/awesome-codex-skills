@@ -1,17 +1,27 @@
 # Awesome Codex Skills
 
-A curated collection of practical Codex skills for design, UI, brand, and presentation workflows.
+A public repository of reusable Codex skills, focused on design systems, UI direction, frontend styling, brand work, and presentation workflows.
 
-This repository is inspired by [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills), but tailored for Codex-centric workflows, local skill repositories, and contribution-friendly GitHub collaboration.
+This is not a generic prompt collection. Each skill in this repo is meant to be a practical working unit: a `SKILL.md` with clear triggers, handoff rules, and optional helper assets such as scripts, references, templates, agents, or data files.
 
-## Why This Repo Exists
+## What This Repository Is
 
-- Collect reusable Codex skills in one public, versioned place.
-- Make skill discovery easier for design-heavy and frontend-heavy workflows.
-- Standardize contribution quality with a clear structure, templates, and CI checks.
-- Keep skills composable, so one skill can route or hand off work to another cleanly.
+This repository is the shared home for a growing set of Codex-oriented skills that can be:
 
-## Current Skills
+- used directly in day-to-day work
+- versioned and improved in public
+- combined across related workflows
+- reviewed with the same discipline as code and documentation
+
+The current collection leans heavily toward design and frontend execution:
+
+- brand and visual identity work
+- UI/UX direction and decision support
+- design-system structure and token thinking
+- UI implementation patterns
+- slide and banner workflows
+
+## Skill Map
 
 | Skill | Focus | When to use |
 | --- | --- | --- |
@@ -23,12 +33,18 @@ This repository is inspired by [ComposioHQ/awesome-claude-skills](https://github
 | [ui-styling](./ui-styling/) | UI implementation patterns | shadcn/ui, Tailwind CSS, responsive layout, and theming |
 | [ui-ux-pro-max](./ui-ux-pro-max/) | UI/UX decision support | Choosing style, typography, color, layout, and UX direction before implementation |
 
-## Quick Start
+## How to Use This Repo
 
-1. Open the folder for the skill you need.
-2. Read the local `SKILL.md` first.
-3. Follow any bundled scripts, references, assets, or workflow notes from that skill.
-4. If the skill calls for a handoff, continue with the linked companion skill instead of improvising a parallel workflow.
+1. Pick the skill folder that matches the task.
+2. Start with the local `SKILL.md`.
+3. Use the bundled scripts or references only when that skill tells you to.
+4. Follow handoff guidance when the skill points to a companion skill.
+
+If you are unsure where to start:
+
+- use [design](./design/) as the top-level router for multi-domain design requests
+- use [ui-ux-pro-max](./ui-ux-pro-max/) when the problem is about choosing direction before implementation
+- use [ui-styling](./ui-styling/) when the direction is already known and the next step is implementation
 
 ## Repository Layout
 
@@ -51,35 +67,56 @@ This repository is inspired by [ComposioHQ/awesome-claude-skills](https://github
 `-- ui-ux-pro-max/
 ```
 
-Each skill folder should keep its own source of truth inside `SKILL.md`. Optional supporting materials may live alongside it in folders such as `references/`, `scripts/`, `assets/`, `agents/`, or `data/`.
+Each skill folder keeps its source of truth in `SKILL.md`. Supporting materials may live next to it in folders such as `references/`, `scripts/`, `assets/`, `agents/`, or `data/`.
 
-## Contribution Model
+## Repository Rules
 
-We accept improvements to existing skills, new skills, and repository tooling that helps keep the collection healthy.
+This repo is intentionally simple at the top level:
 
-Before opening a pull request:
+- one skill per top-level folder
+- one `SKILL.md` as the entry point for that skill
+- helper files live inside the same skill folder
+- repository-wide governance and validation live in `.github/`, `docs/`, and `scripts/`
 
-1. Create a short-lived branch from `main`.
-2. Keep your change scoped and documented.
-3. Run the repository validation script locally when possible.
-4. Open a PR with a clear summary and validation notes.
+That keeps the collection readable as it grows and makes it easier to review each skill as a self-contained workflow unit.
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution rules and [docs/branching.md](./docs/branching.md) for the branch and merge strategy.
+## Contributing
 
-## Quality Gates
+Contributions are welcome for:
 
-GitHub Actions validates repository structure on every pull request and on pushes to `main`. The current checks verify:
+- new skills with a real workflow behind them
+- improvements to existing skills
+- validation and tooling for repository quality
+- documentation that makes the repo easier to adopt and maintain
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution requirements and [docs/branching.md](./docs/branching.md) for the branch and merge policy.
+
+## Validation
+
+GitHub Actions validates repository structure on pull requests and on pushes to `main`.
+
+The current checks verify:
 
 - required repository files exist
 - each top-level skill folder contains a valid `SKILL.md`
 - skill metadata matches its folder name
 - the root `README.md` links to every published skill folder
 
-## Roadmap
+You can run the same validation locally:
+
+```bash
+python scripts/validate_repo.py
+```
+
+## Project Direction
 
 - Add more Codex skills across engineering, research, automation, and document workflows
 - Improve repository validation to catch broken relative references inside skills
 - Add automated skill indexing or searchable metadata exports
+
+## Acknowledgement
+
+The idea of organizing reusable agent skills in a public repository was informed by projects such as [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills), but this repository is structured around Codex workflows and the specific skill set maintained here.
 
 ## License
 
